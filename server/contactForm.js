@@ -16,6 +16,7 @@ Meteor.startup(function() {
      this.unblock();
      // Structure the data to send
      message = {
+       from: contactFormConfig.settings.from,
        replyTo: params.name + ' <' + params.email + '>',
        to: contactFormConfig.settings.fullName + ' <' + contactFormConfig.settings.emailTo + '>',
        subject: contactFormConfig.settings.customSubject(params),
