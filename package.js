@@ -1,8 +1,8 @@
 Package.describe({
-  name: 'rgoomar:contactform',
-  summary: 'Simple drop-in contact form with validation',
+  name: 'zda:contactform',
+  summary: 'Simple drop-in contact form with validation (fork with `from` support)',
   version: '0.0.9',
-  git: 'https://github.com/rgoomar/contactform.git'
+  git: 'https://github.com/zda/contactform.git'
 });
 
 Package.onUse(function(api) {
