@@ -1,7 +1,7 @@
 Package.describe({
   name: 'zda:contactform',
-  summary: 'Simple drop-in contact form with validation (fork with `from` support)',
-  version: '0.0.9',
+  summary: 'Simple drop-in contact form with validation [experimental fork with `from` support]',
+  version: '0.0.10',
   git: 'https://github.com/zda/contactform.git'
 });
 
