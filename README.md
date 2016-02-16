@@ -4,7 +4,7 @@ This is an easy to use, drop-in package for Meteor that allows you to have a ver
 ## Usage
 Add the package with:  
 ```
-meteor add rgoomar:contactform
+meteor add fragro:contactform
 ```
 
 Configure your settings in a file in the ```server/``` folder and your ```MAIL_URL``` environment variable:

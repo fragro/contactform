@@ -1,7 +1,7 @@
 Package.describe({
   name: 'fragro:contactform',
   summary: 'Simple drop-in contact form with validation [experimental fork with `from` support]',
-  version: '0.0.10',
+  version: '0.0.11',
   git: 'https://github.com/fragro/contactform.git'
 });
 
