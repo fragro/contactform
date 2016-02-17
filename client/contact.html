@@ -1,26 +1,34 @@
 <template name="contactForm">
 <div class="row row-centered">
   {{#if formSubmitted}}
-    <!-- Successful Submission Message -->
-    <div class="col-xs-12 col-centered">
-      <div class="alert alert-success">
-        <strong>
-          <span class="fa fa-envelope"></span>
-          Success! Message Sent!
-        </strong>
-      </div>
-    </div>
-  {{else}}
-    {{#if formError}}
-      <!-- Display Error Message -->
+    {{#if successTemplate}}
+      {{>Template.dynamic template=successTemplate}}
+    {{else}}
+      <!-- Successful Submission Message -->
       <div class="col-xs-12 col-centered">
-        <div class="alert alert-danger">
+        <div class="alert alert-success">
           <strong>
-            <span class="fa fa-warning"></span>
-            Error! Please check your inputs!
+            <span class="fa fa-envelope"></span>
+            Success! Message Sent!
           </strong>
         </div>
       </div>
+    {{/if}}
+  {{else}}
+    {{#if formError}}
+      {{#if errorTemplate}}
+        {{>Template.dynamic template=errorTemplate}}
+      {{else}}
+        <!-- Display Error Message -->
+        <div class="col-xs-12 col-centered">
+          <div class="alert alert-danger">
+            <strong>
+              <span class="fa fa-warning"></span>
+              Error! Please check your inputs!
+            </strong>
+          </div>
+        </div>
+      {{/if}}
     {{/if}}
     <!-- Start Contact Form -->
     <form role="form" method="POST">

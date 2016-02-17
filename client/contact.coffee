@@ -45,3 +45,7 @@ Template.contactForm.helpers
     Session.get 'formSubmitted'
   formError: ->
     Session.get 'formError'
+  successTemplate: ->
+    Session.get 'successTemplate'
+  errorTemplate: ->
+    Session.get 'errorTemplate'
